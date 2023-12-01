@@ -3,8 +3,7 @@
 
 
 Opprettet av:
-Steffan næss <steffan@impression.no>
-
+Steffan
 ---
 
 Legg inn beskrivelse av prosjektet her.
