@@ -30,7 +30,7 @@ g = 13
 b = 14
 r = 12
 
-# Filter poossible games
+# Filter possible games
 possible_games = data.loc[(data["max_g"] <= g) & (data["max_b"] <= b) & (data["max_r"] <= r)]["game_nr"]
 
 # Solution part 1
