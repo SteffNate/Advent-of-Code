@@ -1,3 +1,4 @@
+from itertools import product
 document = parse(7)
 target = [int(i.split(":")[0]) for i in document]
 
