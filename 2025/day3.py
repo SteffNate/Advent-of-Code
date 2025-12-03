@@ -2,10 +2,6 @@ with open("inputs/input_3.txt", "r") as f:
     file = f.read().split()
 
 # part 1
-testcase = """987654321111111
-811111111111119
-234234234234278
-818181911112111""".split()
 
 
 def find_max_joltage_for_bank_of_batteries(bank: str) -> int:
