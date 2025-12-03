@@ -1,9 +1,8 @@
 with open("inputs/input_3.txt", "r") as f:
     file = f.read().split()
 
+
 # part 1
-
-
 def find_max_joltage_for_bank_of_batteries(bank: str) -> int:
     initial_jolt = max(bank[:-1])
     pos_of_initial_jolt = bank.find(initial_jolt)
