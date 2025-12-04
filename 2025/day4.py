@@ -44,14 +44,16 @@ print(accessible_rolls)
 # Part 2
 rolls_of_paper_moved = 0
 
+paper_rolls = [position for position in paper_map if paper_map[position] == "@"]
+
 while True:
     rolls_moved_before = rolls_of_paper_moved
-    paper_rolls = [position for position in paper_map if paper_map[position] == "@"]
     for paper_roll_pos in paper_rolls:
         move_roll = check_surrounding_floor_for_paper_rolls(paper_roll_pos)
         if move_roll:
             paper_map[paper_roll_pos] = "."
             rolls_of_paper_moved += 1
+            paper_rolls.remove(paper_roll_pos)
 
     if rolls_of_paper_moved == rolls_moved_before:
         break
